@@ -8,13 +8,14 @@ export default {
     colors: {
       transparent: "transparent",
       'white': "#ffffff",
-      'black': "#2e2e2e",
+      'black': "#0f1113",
+      'gray': "#eeeeee",
       'primary': "#ff3600",
     },
     fontFamily: {
       'primary': ["League Spartan"],
       'secondary': ["Comfortaa"],
-      'tertiary': ["Audiowide"],
+      'tertiary': ["Permanent Marker"],
     },
     extend: {},
   },
