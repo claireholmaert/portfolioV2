@@ -1,13 +1,13 @@
-// components
-import Header from "./components/Header";
+// router
+import Router from "./Router";
 
 function App() {
 
   return (
     <div className="home">
-      <Header />
+      <Router />
     </div>
   )
 }
 
-export default App
+export default App;

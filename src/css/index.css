@@ -1,0 +1,32 @@
+/* 
+    fonts
+*/
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+nav a:nth-child(odd){
+    color: #ff3600;
+    &:hover{
+        @apply text-primary/70;
+    }
+}
+
+nav a:nth-child(even){
+    color: #2e2e2e;
+    &:hover {
+        @apply text-black/70;
+    }
+}
+
+.animate {
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+  }

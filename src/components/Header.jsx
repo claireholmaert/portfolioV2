@@ -1,20 +1,21 @@
-
-
 function Header() {
   return (
-    <header className="flex justify-between max-w-7xl mx-auto mt-10">
-        <h1>Claire Holmaert</h1>
-        <div>
+    <header className="flex items-center justify-between max-w-7xl mx-auto mt-10">
+        <h1>
+            <span className="text-6xl text-primary font-primary">C</span>
+            <span className="text-5xl text-black font-tertiary tracking-wider">.Holmaërt</span>
+            </h1>
+        <div className="font-secondary">
             <nav className="space-x-5">
-                <a href="#">A propos</a>
-                <a href="#">Projets</a>
-                <a href="#">Compétences</a>
-                <a href="#">Tarifs</a>
-                <a href="#">Contact</a>
+                <a href="#" className="animate">A propos</a>
+                <a href="#" className="animate">Projets</a>
+                <a href="#" className="animate">Compétences</a>
+                <a href="#" className="animate">Tarifs</a>
+                <a href="#" className="animate">Contact</a>
             </nav>
         </div>
     </header>
   )
 }
 
-export default Header
+export default Header;
