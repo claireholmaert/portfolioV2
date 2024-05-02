@@ -1,6 +1,6 @@
 function Header() {
   return (
-    <header className="flex items-center justify-between max-w-7xl mx-auto mt-10">
+    <header className="flex items-center justify-between mt-10">
         <h1>
             <span className="text-6xl text-primary font-primary">C</span>
             <span className="text-5xl text-black font-tertiary tracking-wider">.Holmaërt</span>
