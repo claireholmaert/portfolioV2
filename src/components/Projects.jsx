@@ -22,7 +22,6 @@ const Slide = ({children, image, title, link}) => {
       <div className="p-10 mb-10">
         <h3 className="text-3xl text-primary font-tertiary mb-10">{title}</h3>
         <p className="font-secondary tracking-wide text-lg leading-relaxed text-black mb-10">{children}</p>
-        
         <a 
         href={link} 
         className="animate bg-yellow hover:bg-hover-yellow hover:animate px-5 py-3 rounded-lg text-xl font-primary tracking-widest"
@@ -50,7 +49,7 @@ function Projects() {
     title="Burger House"
     link="https://burger-lrgt.vercel.app/"
     >
-      <p>Burger House est un site vitrine que j'ai développé pour mettre en avant mes compétences de front-end.</p>
+      <p>Burger House est un site vitrine que j'ai développé pour mettre en avant mes compétences front-end. Il permet de visualiser l'UI/UX design.</p>
     </Slide>,
     <Slide
     key={1}
@@ -71,7 +70,7 @@ function Projects() {
   ]
 
   return (
-    <div className="max-w-6xl mx-auto ">
+    <div className="max-w-6xl mx-auto">
         <div className="flex items-center justify-center my-10">
         <h2 className="text-xl font-primary px-7 py-3 bg-primary rounded-lg uppercase inline-block tracking-widest">
             Mes projets

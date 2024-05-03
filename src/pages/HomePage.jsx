@@ -2,6 +2,7 @@
 import Header from "../components/Header";
 import Presentation from "../components/Presentation";
 import Projects from "../components/Projects";
+import Skill from "../components/Skill";
 
 function HomePage() {
   return (
@@ -9,6 +10,7 @@ function HomePage() {
       <Header />
       <Presentation />
       <Projects />
+      <Skill />
     </div>
   )
 }
