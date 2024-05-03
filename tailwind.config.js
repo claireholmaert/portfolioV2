@@ -9,8 +9,10 @@ export default {
       transparent: "transparent",
       'white': "#ffffff",
       'black': "#0f1113",
-      'gray': "#eeeeee",
-      'primary': "#ff3600",
+      'gray': "#D5D7DA",
+      'primary': "#009DF8",
+      'yellow': "#FFB742",
+      'hover-yellow': "#E69C24",
     },
     fontFamily: {
       'primary': ["League Spartan"],

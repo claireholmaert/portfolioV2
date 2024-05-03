@@ -10,16 +10,16 @@
 @tailwind utilities;
 
 nav a:nth-child(odd){
-    color: #ff3600;
+    color: #009DF8;
     &:hover{
-        @apply text-primary/70;
+        color: #8DAFCE;
     }
 }
 
 nav a:nth-child(even){
     color: #2e2e2e;
     &:hover {
-        @apply text-black/70;
+        color: #6A7987;
     }
 }
 
