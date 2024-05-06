@@ -11,6 +11,7 @@ export default {
       'black': "#0f1113",
       'gray': "#D5D7DA",
       'primary': "#009DF8",
+      'marine': '#3D4756',
       'yellow': "#FFB742",
       'hover-yellow': "#E69C24",
     },
@@ -21,6 +22,9 @@ export default {
     },
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    // eslint-disable-next-line no-undef
+    require('@tailwindcss/forms'),
+  ],
 }
 
