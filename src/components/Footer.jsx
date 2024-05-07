@@ -73,15 +73,21 @@ function Footer() {
     <img 
       src={Image2} 
       className='w-6 h-6'
-      alt="" />
+      alt="logo react"
+      title='react'
+      />
       <img 
       src={Image3} 
       className='w-6 h-6'
-      alt="" />
+      alt="logo vite"
+      title='vite'
+      />
       <img 
       src={Image4} 
       className='w-6 h-6'
-      alt="" />
+      alt="logo tailwind" 
+      title='tailwind'
+      />
     </div>
     </div>
     </div>
