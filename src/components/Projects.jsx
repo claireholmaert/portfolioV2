@@ -21,7 +21,7 @@ const Slide = ({children, image, title, link}) => {
       </div>
       <div className="p-10 mb-10">
         <h3 className="text-3xl text-primary font-tertiary mb-10">{title}</h3>
-        <p className="font-secondary tracking-wide text-lg leading-relaxed text-black mb-10">{children}</p>
+        <p className="font-secondary tracking-wide text-lg leading-relaxed text-black mb-10 dark:text-white">{children}</p>
         <a 
         href={link} 
         className="animate bg-yellow hover:bg-hover-yellow hover:animate px-5 py-3 rounded-lg text-xl font-primary tracking-widest"
@@ -76,7 +76,7 @@ function Projects() {
             Mes projets
         </h2>
         </div>
-        <div className="shadow-2xl mb-20 rounded-lg">
+        <div className="shadow-2xl mb-20 rounded-lg dark:shadow-lg dark:shadow-yellow">
       <AliceCarousel 
       mouseTracking
       disableButtonsControls

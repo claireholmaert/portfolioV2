@@ -44,15 +44,15 @@ function Contact() {
         <h2 className='text-xl mb-10 font-primary px-7 py-3 bg-primary rounded-lg uppercase inline-block tracking-widest'>Contact</h2>
         <div className='text-xl space-y-2'>
         <p className='shadowTitle text-4xl font-tertiary text-primary'>Une idée de projet...</p>
-        <p className='font-primary'>Envoyez-moi un email</p>
+        <p className='font-primary dark:text-white'>Envoyez-moi un email</p>
         </div>
         </div>
         
     <form ref={form} onSubmit={sendEmail} className='max-w-6xl mx-auto flex items-center p-10 font-secondary rounded-lg space-x-10'>
-        <div className='relative w-1/2 bg-gradient-to-b from-black via-black to-marine rounded-full'>
+        <div className='relative w-1/2 bg-gradient-to-b from-black via-black to-marine rounded-full dark:bg-none'>
         <img 
         src={Image} 
-        className='w-full object-cover blur-2xl'
+        className='w-full object-cover blur-2xl dark:blur-lg'
         alt="image floutée d'une femme en 3d tenant une ampoule allumé dans chaque main" />
         <img 
         src={Image} 

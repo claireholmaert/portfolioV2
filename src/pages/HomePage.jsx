@@ -8,6 +8,7 @@ import Skill from "../components/Skill";
 
 function HomePage() {
   return (
+    <div className="dark:bg-black">
     <div className="max-w-7xl mx-auto space-y-20">
       <Header />
       <Presentation />
@@ -15,6 +16,7 @@ function HomePage() {
       <Skill />
       <Contact />
       <Footer />
+    </div>
     </div>
   )
 }

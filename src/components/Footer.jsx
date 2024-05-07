@@ -23,7 +23,7 @@ function Footer() {
             <h4 className='font-secondary'>Vous pouvez me trouvez ici :</h4>
             <a 
             href="https://github.com/claireholmaert" 
-            className='absolute top-16 -left-5 p-5 bg-yellow rounded-full animate hover:scale-110 z-10'
+            className='absolute top-16 -left-5 p-5 bg-yellow rounded-full animate hover:scale-110 hover:bg-hover-yellow z-10'
             target="_blank"
             >
             <svg 
@@ -37,7 +37,7 @@ function Footer() {
             </a>
             <a 
             href="https://www.linkedin.com/in/claire-holmaert-%F0%9F%8D%80-b103a1262/" 
-            className='absolute top-16 -right-10 p-5 bg-yellow rounded-full animate hover:scale-110 z-10'
+            className='absolute top-16 -right-10 p-5 bg-yellow rounded-full animate hover:scale-110 hover:bg-hover-yellow z-10'
             target="_blank"
             >
             <svg 

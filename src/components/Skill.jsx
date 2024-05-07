@@ -26,14 +26,14 @@ function Skill() {
                 <div className='relative left-20'>
                 <img 
                 src={Image1} 
-                className='w-1/3 object-cover blur-2xl' 
+                className='w-1/3 object-cover blur-2xl dark:blur-sm' 
                 alt="" />
                 <img 
                 src={Image1} 
                 className='absolute object-cover inset-0 w-1/3' 
                 alt="" />
                 </div>
-                <h4 className='font-primary tracking-widest text-2xl'>Javascript</h4>
+                <h4 className='font-primary tracking-widest text-2xl dark:text-white'>Javascript</h4>
             </div>
             </a>
             <a 
@@ -44,14 +44,14 @@ function Skill() {
                 <div className='relative left-20'>
                 <img 
                 src={Image2} 
-                className='w-1/3 object-cover blur-2xl' 
+                className='w-1/3 object-cover blur-2xl dark:blur-sm' 
                 alt="" />
                 <img 
                 src={Image2} 
                 className='absolute object-cover inset-0 w-1/3' 
                 alt="" />
                 </div>
-                <h4 className='font-primary tracking-widest text-2xl'>React</h4>
+                <h4 className='font-primary tracking-widest text-2xl dark:text-white'>React</h4>
             </div>
             </a>
             <a 
@@ -62,14 +62,14 @@ function Skill() {
                 <div className='relative left-20'>
                 <img 
                 src={Image3} 
-                className='w-1/3 object-cover blur-2xl' 
+                className='w-1/3 object-cover blur-2xl dark:blur-sm' 
                 alt="" />
                 <img 
                 src={Image3} 
                 className='absolute object-cover inset-0 w-1/3' 
                 alt="" />
                 </div>
-                <h4 className='font-primary tracking-widest text-2xl'>NextJs</h4>
+                <h4 className='font-primary tracking-widest text-2xl dark:text-white'>NextJs</h4>
             </div>
             </a>
             <a 
@@ -80,14 +80,14 @@ function Skill() {
                 <div className='relative left-20'>
                 <img 
                 src={Image6} 
-                className='w-1/3 object-cover blur-2xl' 
+                className='w-1/3 object-cover blur-2xl dark:blur-sm' 
                 alt="" />
                 <img 
                 src={Image6} 
                 className='absolute object-cover inset-0 w-1/3' 
                 alt="" />
                 </div>
-                <h4 className='font-primary tracking-widest text-2xl'>Symfony</h4>
+                <h4 className='font-primary tracking-widest text-2xl dark:text-white'>Symfony</h4>
             </div>
             </a>
             <a 
@@ -98,14 +98,14 @@ function Skill() {
                 <div className='relative left-20'>
                 <img 
                 src={Image4} 
-                className='w-1/3 object-cover blur-2xl' 
+                className='w-1/3 object-cover blur-2xl dark:blur-sm' 
                 alt="" />
                 <img 
                 src={Image4} 
                 className='absolute object-cover inset-0 w-1/3' 
                 alt="" />
                 </div>
-                <h4 className='font-primary tracking-widest text-2xl'>Sass</h4>
+                <h4 className='font-primary tracking-widest text-2xl dark:text-white'>Sass</h4>
             </div>
             </a>
             <a 
@@ -116,14 +116,14 @@ function Skill() {
                 <div className='relative left-20'>
                 <img 
                 src={Image5} 
-                className='w-1/3 object-cover blur-2xl' 
+                className='w-1/3 object-cover blur-2xl dark:blur-sm' 
                 alt="" />
                 <img 
                 src={Image5} 
                 className='absolute object-cover inset-0 w-1/3' 
                 alt="" />
                 </div>
-                <h4 className='font-primary tracking-widest text-2xl'>Tailwind</h4>
+                <h4 className='font-primary tracking-widest text-2xl dark:text-white'>Tailwind</h4>
             </div>
             </a>
             <a 
@@ -134,14 +134,14 @@ function Skill() {
                 <div className='relative left-20'>
                 <img 
                 src={Image7} 
-                className='w-1/3 object-cover blur-2xl' 
+                className='w-1/3 object-cover blur-2xl dark:blur-sm' 
                 alt="" />
                 <img 
                 src={Image7} 
                 className='absolute object-cover inset-0 w-1/3' 
                 alt="" />
                 </div>
-                <h4 className='font-primary tracking-widest text-2xl'>MySQL</h4>
+                <h4 className='font-primary tracking-widest text-2xl dark:text-white'>MySQL</h4>
             </div>
             </a>
             <a 
@@ -152,14 +152,14 @@ function Skill() {
                 <div className='relative left-20'>
                 <img 
                 src={Image8} 
-                className='w-1/3 object-cover blur-2xl' 
+                className='w-1/3 object-cover blur-2xl dark:blur-sm' 
                 alt="" />
                 <img 
                 src={Image8} 
                 className='absolute object-cover inset-0 w-1/3' 
                 alt="" />
                 </div>
-                <h4 className='font-primary tracking-widest text-2xl'>Firebase</h4>
+                <h4 className='font-primary tracking-widest text-2xl dark:text-white'>Firebase</h4>
             </div>
             </a>
             <a 
@@ -170,14 +170,14 @@ function Skill() {
                 <div className='relative left-20'>
                 <img 
                 src={Image9} 
-                className='w-1/3 object-cover blur-2xl' 
+                className='w-1/3 object-cover blur-2xl dark:blur-sm' 
                 alt="" />
                 <img 
                 src={Image9} 
                 className='absolute object-cover inset-0 w-1/3' 
                 alt="" />
                 </div>
-                <h4 className='font-primary tracking-widest text-2xl'>Docker</h4>
+                <h4 className='font-primary tracking-widest text-2xl dark:text-white'>Docker</h4>
             </div>
             </a>
         </div>
