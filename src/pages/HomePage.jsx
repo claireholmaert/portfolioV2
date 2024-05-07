@@ -1,5 +1,6 @@
 // components
 import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Presentation from "../components/Presentation";
 import Projects from "../components/Projects";
@@ -13,6 +14,7 @@ function HomePage() {
       <Projects />
       <Skill />
       <Contact />
+      <Footer />
     </div>
   )
 }

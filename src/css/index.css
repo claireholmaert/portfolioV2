@@ -30,3 +30,11 @@ nav a:nth-child(even){
     -ms-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
   }
+
+  .copyright {
+    font-size: 25px; /* Ajustez cette valeur pour changer la taille */
+}
+
+.shadowTitle {
+    text-shadow: 3px 3px #DAF3FF;
+}

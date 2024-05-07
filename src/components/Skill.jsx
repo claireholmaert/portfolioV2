@@ -11,7 +11,7 @@ import Image9 from '../../public/medias/images/docker-icon.svg';
 
 function Skill() {
   return (
-    <div className="max-w-6xl mx-auto">
+    <div id='skills' className="max-w-6xl mx-auto">
       <div className="flex items-center justify-center my-20">
         <h2 className="text-xl font-primary px-7 py-3 bg-primary rounded-lg uppercase inline-block tracking-widest">
             Mes compétences
