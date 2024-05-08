@@ -17,7 +17,7 @@ function Skill() {
             Mes compétences
         </h2>
         </div>
-        <div className="grid grid-cols-3 gap-5">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-1 lg:gap-5">
             <a 
             href="https://devdocs.io/javascript/" 
             className='animate hover:scale-110'
