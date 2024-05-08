@@ -8,8 +8,8 @@ import Skill from "../components/Skill";
 
 function HomePage() {
   return (
-    <div className="dark:bg-black">
-    <div className="max-w-7xl mx-auto space-y-20">
+    <div id="homepage" className="dark:bg-black">
+    <div className="max-w-7xl mx-auto space-y-20 p-5 xl:p-0">
       <Header />
       <Presentation />
       <Projects />
