@@ -36,11 +36,9 @@ function Contact() {
       );
   };
 
-  
-
   return (
     <div id='contact'>
-        <div className='text-center mb-10'>
+        <div className='text-center lg:mb-10'>
         <h2 className='text-xl mb-10 font-primary px-7 py-3 bg-primary rounded-lg uppercase inline-block tracking-widest'>Contact</h2>
         <div className='text-xl space-y-2'>
         <p className='shadowTitle text-4xl font-tertiary text-primary'>Une idée de projet...</p>
@@ -48,8 +46,8 @@ function Contact() {
         </div>
         </div>
         
-    <form ref={form} onSubmit={sendEmail} className='max-w-6xl mx-auto flex items-center p-10 font-secondary rounded-lg space-x-10'>
-        <div className='relative w-1/2 bg-gradient-to-b from-black via-black to-marine rounded-full dark:bg-none'>
+    <form ref={form} onSubmit={sendEmail} className='max-w-6xl mx-auto flex items-center p-10 font-secondary rounded-lg lg:space-x-10'>
+        <div className='relative w-1/2 bg-gradient-to-b from-black via-black to-marine rounded-full dark:bg-none hidden lg:flex'>
         <img 
         src={Image} 
         className='w-full object-cover blur-2xl dark:blur-lg'
@@ -59,14 +57,14 @@ function Contact() {
         className='absolute inset-0 w-full object-cover p-5'
         alt="image d'une femme en 3d tenant une ampoule allumé dans chaque main" />
         </div>
-        <div className='grid grid-cols-2 gap-5 z-10 border-2 border-dashed p-10 border-primary rounded-lg'>
+        <div className='grid grid-cols-2 gap-5 z-10 w-full border-2 border-dashed p-5 md:p-10 border-primary rounded-lg'>
         <div>
         <label className='hidden'>Nom</label>
       <input 
       type="text" 
       name="to_name"
       placeholder='Nom'
-      className="focus:ring-primary focus:border-primary block w-full border-formulaire rounded-md p-5"
+      className="focus:ring-primary focus:border-primary block w-full border-formulaire rounded-md md:p-5"
     />
         </div>
         <div>
@@ -75,7 +73,7 @@ function Contact() {
       type="email" 
       name="from_name"
       placeholder='Email'
-      className="focus:ring-primary focus:border-primary block w-full border-formulaire rounded-md p-5"
+      className="focus:ring-primary focus:border-primary block w-full border-formulaire rounded-md md:p-5"
     />
         </div>
         <div className='col-span-2'>
