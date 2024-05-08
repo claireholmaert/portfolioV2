@@ -6,14 +6,14 @@ import Image4 from '../../public/medias/images/tailwindcss-icon.svg';
 
 function Footer() {
   return (
-    <div className='bg-black w-full h-full rounded-lg pt-20 pb-5 px-24'>
-    <div className=" flex justify-between">
-        <div className='flex flex-col space-y-40 w-1/2'>
+    <div className='bg-black w-full h-full rounded-lg md:pt-10 pb-5 md:px-10 lg:px-24'>
+    <div className="flex flex-col lg:flex-row items-center justify-between">
+        <div className='flex flex-col space-y-10 lg:space-y-30 w-full p-10 lg:w-1/2'>
           <a href="#header">
-          <h3 className='text-4xl text-primary font-tertiary'>Claire HOLMAERT</h3>
+          <h3 className='text-2xl md:text-4xl text-primary font-tertiary'>Claire HOLMAERT</h3>
           </a>
             
-            <p className='text-white text-lg font-secondary'>
+            <p className='text-white md:text-lg font-secondary'>
             Transformons des lignes de code en expériences numériques mémorables.
             </p>
             
@@ -23,7 +23,7 @@ function Footer() {
             <h4 className='font-secondary'>Vous pouvez me trouvez ici :</h4>
             <a 
             href="https://github.com/claireholmaert" 
-            className='absolute top-16 -left-5 p-5 bg-yellow rounded-full animate hover:scale-110 hover:bg-hover-yellow z-10'
+            className='absolute top-20 left-0 lg:top-16 lg:-left-5 p-3 lg:p-5 bg-yellow rounded-full animate hover:scale-110 hover:bg-hover-yellow z-10'
             target="_blank"
             >
             <svg 
@@ -37,7 +37,7 @@ function Footer() {
             </a>
             <a 
             href="https://www.linkedin.com/in/claire-holmaert-%F0%9F%8D%80-b103a1262/" 
-            className='absolute top-16 -right-10 p-5 bg-yellow rounded-full animate hover:scale-110 hover:bg-hover-yellow z-10'
+            className='absolute top-20 right-0 lg:top-16 lg:-right-10 p-3 lg:p-5 bg-yellow rounded-full animate hover:scale-110 hover:bg-hover-yellow z-10'
             target="_blank"
             >
             <svg 
