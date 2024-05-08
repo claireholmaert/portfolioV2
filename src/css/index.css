@@ -9,6 +9,9 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    margin: 0;
+}
 
 .animate {
     -webkit-transition: all .2s ease-in-out;
