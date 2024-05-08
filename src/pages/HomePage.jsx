@@ -9,7 +9,7 @@ import Skill from "../components/Skill";
 function HomePage() {
   return (
     <div id="homepage" className="dark:bg-black">
-    <div className="max-w-7xl mx-auto space-y-20 p-5 xl:p-0">
+    <div className="max-w-7xl mx-auto space-y-10 md:space-y-20 p-5 xl:p-0">
       <Header />
       <Presentation />
       <Projects />
