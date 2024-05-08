@@ -12,16 +12,16 @@ import Image3 from '../../public/medias/images/hash.png';
 
 const Slide = ({children, image, title, link}) => {
   return(
-    <div className="grid grid-cols-2 p-6">
-      <div className="relative bg-gray w-full h-[350px] rounded-lg">
+    <div className="grid md:grid-cols-2 p-6">
+      <div className="relative bg-gray w-full h-[250px] md:h-[350px] rounded-lg">
         <img 
         src={image} 
         className="absolute rounded-lg bg-gray top-0 left-0 w-full h-full object-cover object-bottom z-0"
         alt="" />
       </div>
       <div className="p-10 mb-10">
-        <h3 className="text-3xl text-primary font-tertiary mb-10">{title}</h3>
-        <p className="font-secondary tracking-wide text-lg leading-relaxed text-black mb-10 dark:text-white">{children}</p>
+        <h3 className="text-3xl text-primary font-tertiary mb-5 md:mb-10">{title}</h3>
+        <p className="font-secondary tracking-wide text-base lg:text-lg leading-relaxed text-black mb-10 dark:text-white">{children}</p>
         <a 
         href={link} 
         className="animate bg-yellow hover:bg-hover-yellow hover:animate px-5 py-3 rounded-lg text-xl font-primary tracking-widest"
