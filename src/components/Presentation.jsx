@@ -13,7 +13,7 @@ function Presentation() {
             Je suis une développeuse web full stack avec une touche d'originalité. Mon parcours atypique, de militaire à codeuse, ne manque pas de piquant ! J'ai troqué mes rangers pour des lignes de code, mais je garde l'esprit de combat dans la créativité d'un site, le choix de langage et la résolution de bugs. 
             </span>
         </p>
-        <a href="#contact" className='mt-5 w-48 animate bg-yellow hover:bg-hover-yellow hover:animate px-4 py-2 md:px-5 md:py-3 rounded-lg text-xl font-primary tracking-widest'>
+        <a href="#contact" className='mt-5 w-48 animate text-center bg-yellow hover:bg-hover-yellow hover:animate px-4 py-2 md:px-5 md:py-3 rounded-lg text-xl font-primary tracking-widest'>
             Contactez-moi
           </a>
       </div>

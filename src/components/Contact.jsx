@@ -87,7 +87,7 @@ function Contact() {
         <div className='flex justify-end col-span-2'>
         <input 
         onClick={notify}
-        className='animate bg-yellow hover:bg-hover-yellow hover:animate px-5 py-3 rounded-lg text-xl font-primary tracking-widest' 
+        className='animate bg-yellow hover:bg-hover-yellow hover:animate px-4 py-2 md:px-5 md:py-3 rounded-lg text-xl font-primary tracking-widest' 
         type="submit" 
         value="Envoyer" />
         <ToastContainer />
