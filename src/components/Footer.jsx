@@ -6,9 +6,9 @@ import Image4 from '../../public/medias/images/tailwindcss-icon.svg';
 
 function Footer() {
   return (
-    <div className='bg-black w-full h-full rounded-lg md:pt-10 pb-5 md:px-10 lg:px-24'>
-    <div className="flex flex-col lg:flex-row items-center justify-between">
-        <div className='flex flex-col space-y-10 lg:space-y-30 w-full p-10 lg:w-1/2'>
+    <div className='bg-black w-full h-full rounded-lg pb-5 md:pt-10 md:px-10 lg:px-24'>
+    <div className="flex flex-col items-center justify-between lg:flex-row ">
+        <div className='flex flex-col items-center space-y-10 w-full p-5 lg:items-start  lg:p-10 lg:w-1/2 lg:space-y-30'>
           <a href="#header">
           <h3 className='text-2xl md:text-4xl text-primary font-tertiary'>Claire HOLMAERT</h3>
           </a>
