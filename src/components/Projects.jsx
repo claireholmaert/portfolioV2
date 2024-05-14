@@ -70,7 +70,7 @@ function Projects() {
   ]
 
   return (
-    <div id="projects" className="max-w-6xl mx-auto">
+    <div id="projects" className="max-w-6xl mx-auto pt-1">
         <div className="flex items-center justify-center my-10">
         <h2 className="text-xl font-primary px-7 py-3 bg-primary rounded-lg uppercase inline-block tracking-widest">
             Mes projets

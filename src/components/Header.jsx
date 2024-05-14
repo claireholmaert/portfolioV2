@@ -21,7 +21,7 @@ function Header() {
           <img src={Image2} className='w-10 md:w-16 xl:w-18 hidden dark:block' alt="logo du site avec la lettre C couleur orange et la lettre H couleur blanche" />
         </h1>
         <div className="font-secondary">
-            <nav className="flex items-center space-x-10 lg:space-x-5">
+            <nav className="flex items-center space-x-10">
               <div className='flex'>
               <a 
                 href="#projects" 

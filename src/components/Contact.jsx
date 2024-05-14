@@ -37,7 +37,7 @@ function Contact() {
   };
 
   return (
-    <div id='contact'>
+    <div id='contact' className='pt-4'>
         <div className='text-center lg:mb-10'>
         <h2 className='text-xl mb-10 font-primary px-7 py-3 bg-primary rounded-lg uppercase inline-block tracking-widest'>Contact</h2>
         <div className='text-xl space-y-2'>
