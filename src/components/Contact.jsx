@@ -11,7 +11,12 @@ import 'react-toastify/dist/ReactToastify.css';
 // images
 import Image from '../../public/medias/images/light-girl.png';
 
+// translation
+import { useTranslation } from 'react-i18next';
+
 function Contact() {
+
+  const { t } = useTranslation();
     const form = useRef();
 
     const notify = () => toast();
@@ -27,11 +32,11 @@ function Contact() {
       })
       .then(
         () => {
-          toast.success('Message envoyé');
+          toast.success(t('success_message'));
         form.current.reset();
         },
         (error) => {
-          toast.error("Erreur lors de l'envoi du message", error.text);
+          toast.error(`${t('error_message')}: ${error.text}`);
         },
       );
   };
@@ -41,8 +46,8 @@ function Contact() {
         <div className='text-center lg:mb-10'>
         <h2 className='text-xl mb-10 font-primary px-7 py-3 bg-primary rounded-lg uppercase inline-block tracking-widest'>Contact</h2>
         <div className='text-xl space-y-2'>
-        <p className='shadowTitle text-4xl font-tertiary text-primary'>Une idée de projet...</p>
-        <p className='font-primary dark:text-white'>Envoyez-moi un email</p>
+        <p className='shadowTitle text-4xl font-tertiary text-primary'>{t('idea')}</p>
+        <p className='font-primary dark:text-white'>{t('send_email')}</p>
         </div>
         </div>
         
@@ -59,11 +64,11 @@ function Contact() {
         </div>
         <div className='grid grid-cols-2 gap-5 z-10 w-full border-2 border-dashed p-5 md:p-10 border-primary rounded-lg'>
         <div>
-        <label className='hidden'>Nom</label>
+        <label className='hidden'>{t('name')}</label>
       <input 
       type="text" 
       name="to_name"
-      placeholder='Nom'
+      placeholder={t('name')}
       className="focus:ring-primary focus:border-primary block w-full border-formulaire rounded-md md:p-5"
     />
         </div>
@@ -89,7 +94,8 @@ function Contact() {
         onClick={notify}
         className='animate bg-yellow hover:bg-hover-yellow hover:animate px-4 py-2 md:px-5 md:py-3 rounded-lg text-xl font-primary tracking-widest' 
         type="submit" 
-        value="Envoyer" />
+        value={t('send_button')} 
+        />
         <ToastContainer />
         </div>
         </div> 

@@ -1,3 +1,4 @@
+// images
 import Image1 from '../../public/medias/images/javascript.svg';
 import Image2 from '../../public/medias/images/react.svg';
 import Image3 from '../../public/medias/images/nextjs-icon.svg';
@@ -8,12 +9,18 @@ import Image7 from '../../public/medias/images/mysql.svg';
 import Image8 from '../../public/medias/images/firebase.svg';
 import Image9 from '../../public/medias/images/docker-icon.svg';
 
+// translation
+import { useTranslation } from 'react-i18next';
+
 function Skill() {
+
+  const { t } = useTranslation();
+
   return (
     <div id='skills' className="max-w-6xl mx-auto pt-1">
       <div className="flex items-center justify-center my-20">
         <h2 className="text-xl font-primary px-7 py-3 bg-primary rounded-lg uppercase inline-block tracking-widest">
-          Mes compétences
+          {t('my_skills')}
         </h2>
       </div>
       <div className="grid grid-cols-2 md:grid-cols-3 gap-5 lg:gap-5">

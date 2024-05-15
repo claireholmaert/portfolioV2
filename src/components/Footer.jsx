@@ -4,7 +4,13 @@ import Image2 from '../../public/medias/images/react.svg';
 import Image3 from '../../public/medias/images/vite.svg';
 import Image4 from '../../public/medias/images/tailwindcss-icon.svg';
 
+// translation
+import { useTranslation } from 'react-i18next';
+
 function Footer() {
+
+  const { t } = useTranslation();
+
   return (
     <div className='bg-black w-full h-full rounded-lg pb-5 md:pt-10 md:px-10 lg:px-24'>
     <div className="flex flex-col items-center justify-between lg:flex-row ">
@@ -14,13 +20,13 @@ function Footer() {
           </a>
             
             <p className='text-white md:text-lg font-secondary'>
-            Transformons des lignes de code en expériences numériques mémorables.
+            {t('footer_p')}
             </p>
             
         </div>
         <div className='relative flex flex-col items-center space-y-12'>
         <div className='text-white'>
-            <h4 className='font-secondary'>Vous pouvez me trouvez ici :</h4>
+            <h4 className='font-secondary'>{t('find_me')}</h4>
             <a 
             href="https://github.com/claireholmaert" 
             className='absolute top-20 left-0 lg:top-16 lg:-left-5 p-3 lg:p-5 bg-yellow rounded-full animate hover:scale-110 hover:bg-hover-yellow z-10'
@@ -68,7 +74,7 @@ function Footer() {
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6">
   <path d="M6.429 9.75 2.25 12l4.179 2.25m0-4.5 5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0 4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0-5.571 3-5.571-3" />
 </svg>
-    <p>Stack utilisée : </p>
+    <p>{t('stack')}</p>
     <div className='flex pl-1 space-x-3'>
     <img 
       src={Image2} 

@@ -10,7 +10,13 @@ import Image1 from '../../public/medias/images/burgerHouse.png';
 import Image2 from '../../public/medias/images/budgetApp.png';
 import Image3 from '../../public/medias/images/hash.png';
 
+// translation
+import { useTranslation } from 'react-i18next';
+
 const Slide = ({children, image, title, link}) => {
+
+  const { t } = useTranslation();
+  
   return(
     <div className="grid md:grid-cols-2 p-6">
       <div className="relative bg-gray w-full h-[250px] md:h-[350px] rounded-lg">
@@ -27,7 +33,7 @@ const Slide = ({children, image, title, link}) => {
         className="animate bg-yellow hover:bg-hover-yellow hover:animate px-5 py-3 rounded-lg text-xl font-primary tracking-widest"
         target="_blank"
         >
-          En savoir plus</a>
+          {t('learn_more')}</a>
       </div>
     </div>
   )
@@ -42,6 +48,8 @@ Slide.propTypes = {
 
 function Projects() {
 
+  const { t } = useTranslation();
+
   const items = [
     <Slide
     key={0}
@@ -49,7 +57,7 @@ function Projects() {
     title="Burger House"
     link="https://burger-lrgt.vercel.app/"
     >
-      <p>Burger House est un site vitrine que j'ai développé pour mettre en avant mes compétences front-end. Il permet de visualiser l'UI/UX design.</p>
+      <p>{t('burger_house_description')}</p>
     </Slide>,
     <Slide
     key={1}
@@ -57,7 +65,7 @@ function Projects() {
     title="Budget App"
     link="https://budget-app-beige.vercel.app/"
     >
-      <p>Budget App est une application de gestion de budget intuitivement conçue pour aider les utilisateurs à gérer efficacement leurs finances personnelles ou professionnelles. </p>
+      <p>{t('budget_app_description')}</p>
     </Slide>,
     <Slide
     key={2}
@@ -65,7 +73,7 @@ function Projects() {
     title="Forge Pass"
     link="https://hashage-password.vercel.app/"
     >
-      <p>Forge Pass est une application que j'ai conçue pour répondre à un besoin crucial en matière de sécurité : la génération de mots de passe robustes et sécurisés.</p>
+      <p>{t('forge_pass_description')}</p>
     </Slide>,
   ]
 
@@ -73,7 +81,7 @@ function Projects() {
     <div id="projects" className="max-w-6xl mx-auto pt-1">
         <div className="flex items-center justify-center my-10">
         <h2 className="text-xl font-primary px-7 py-3 bg-primary rounded-lg uppercase inline-block tracking-widest">
-            Mes projets
+            {t('my_projects')}
         </h2>
         </div>
         <div className="shadow-2xl mb-20 rounded-lg dark:shadow-lg dark:shadow-yellow">
