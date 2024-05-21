@@ -9,6 +9,7 @@ import PropTypes from 'prop-types';
 import Image1 from '../../public/medias/images/burgerHouse.png';
 import Image2 from '../../public/medias/images/budgetApp.png';
 import Image3 from '../../public/medias/images/hash.png';
+import Image4 from '../../public/medias/images/brunch-delice.png';
 
 // translation
 import { useTranslation } from 'react-i18next';
@@ -61,6 +62,14 @@ function Projects() {
     </Slide>,
     <Slide
     key={1}
+    image={Image4}
+    title="Brunch Delice"
+    link="https://brunch-delice.vercel.app/"
+    >
+      <p>{t('brunch_delice_description')}</p>
+    </Slide>,
+    <Slide
+    key={2}
     image={Image2}
     title="Budget App"
     link="https://budget-app-beige.vercel.app/"
@@ -68,7 +77,7 @@ function Projects() {
       <p>{t('budget_app_description')}</p>
     </Slide>,
     <Slide
-    key={2}
+    key={3}
     image={Image3}
     title="Forge Pass"
     link="https://hashage-password.vercel.app/"
