@@ -1,3 +1,4 @@
+
 /** @type {import('tailwindcss').Config} */
 export default {
   darkMode: 'class',
@@ -8,18 +9,38 @@ export default {
   theme: {
     colors: {
       transparent: "transparent",
-      'white': "#ffffff",
-      'black': "#0f1113",
-      'gray': "#D5D7DA",
-      'primary': "#009DF8",
-      'marine': '#3D4756',
-      'yellow': "#FFB742",
-      'hover-yellow': "#E69C24",
-    },
-    fontFamily: {
-      'primary': ["League Spartan"],
-      'secondary': ["Comfortaa"],
-      'tertiary': ["Permanent Marker"],
+      white: "#ffffff",
+      black: "#434656",
+      blue: {
+        50: "#eff6ff",
+        100: "#dbeafe",
+        200: "#bfdbfe",
+        300: "#93c5fd",
+        400: "#60a5fa",
+        500: "#3b82f6",
+        600: "#2563eb",
+        950: "#172554",
+      },
+      cyan: {
+        50: "#ecfeff",
+        100: "#cffafe",
+        200: "#a5f3fc",
+        300: "#67e8f9",
+        400: "#22d3ee",
+        500: "#06b6d4",
+      },
+      amber: {
+        50: "#fffbeb",
+        100: "#fef3c7",
+        200: "#fde68a",
+        300: "#fcd34d",
+        400: "#fbbf24",
+        500: "#f59e0b",
+      },
+      slate: {
+        600: "#475569",
+        900: "#0f172a",
+      }
     },
     extend: {},
   },

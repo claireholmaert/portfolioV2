@@ -1,13 +1,13 @@
 // images
-import Image1 from '../../public/medias/images/javascript.svg';
-import Image2 from '../../public/medias/images/react.svg';
-import Image3 from '../../public/medias/images/nextjs-icon.svg';
-import Image4 from '../../public/medias/images/symfony.svg';
-import Image5 from '../../public/medias/images/sass.svg';
-import Image6 from '../../public/medias/images/tailwindcss-icon.svg';
-import Image7 from '../../public/medias/images/mysql.svg';
-import Image8 from '../../public/medias/images/firebase.svg';
-import Image9 from '../../public/medias/images/docker-icon.svg';
+import Image1 from '../../public/assets/images/javascript.svg';
+import Image2 from '../../public/assets/images/react.svg';
+import Image3 from '../../public/assets/images/nextjs-icon.svg';
+import Image4 from '../../public/assets/images/symfony.svg';
+import Image5 from '../../public/assets/images/sass.svg';
+import Image6 from '../../public/assets/images/tailwindcss-icon.svg';
+import Image7 from '../../public/assets/images/mysql.svg';
+import Image8 from '../../public/assets/images/firebase.svg';
+import Image9 from '../../public/assets/images/docker-icon.svg';
 
 // translation
 import { useTranslation } from 'react-i18next';
@@ -18,21 +18,21 @@ function Skill() {
 
   return (
     <div id='skills' className="max-w-6xl mx-auto pt-1">
-      <div className="flex items-center justify-center my-20">
-        <h2 className="text-xl font-primary px-7 py-3 bg-primary rounded-lg uppercase inline-block tracking-widest">
+      <div className="flex items-center justify-center my-5 lg:my-20">
+        <h2 className="text-3xl lg:text-5xl uppercase tracking-widest">
           {t('my_skills')}
         </h2>
       </div>
       <div className="grid grid-cols-2 md:grid-cols-3 gap-5 lg:gap-5">
-        {[{ img: Image1, name: 'Javascript', link: 'https://devdocs.io/javascript/' },
-          { img: Image2, name: 'React', link: 'https://fr.react.dev/' },
-          { img: Image3, name: 'NextJs', link: 'https://nextjs.org/' },
-          { img: Image4, name: 'Sass', link: 'https://sass-lang.com/' },
-          { img: Image5, name: 'Tailwind', link: 'https://tailwindcss.com/' },
-          { img: Image6, name: 'Symfony', link: 'https://symfony.com/' },
-          { img: Image7, name: 'MySQL', link: 'https://dev.mysql.com/' },
-          { img: Image8, name: 'Firebase', link: 'https://firebase.google.com/' },
-          { img: Image9, name: 'Docker', link: 'https://docs.docker.com/' }
+        {[{ img: Image1, name: 'Javascript', link: 'https://devdocs.io/javascript/', alt: 'logo de javascript' },
+          { img: Image2, name: 'React', link: 'https://fr.react.dev/', alt: 'logo de react' },
+          { img: Image3, name: 'NextJs', link: 'https://nextjs.org/', alt: 'logo de next.js' },
+          { img: Image4, name: 'Sass', link: 'https://sass-lang.com/', alt: 'logo de saas' },
+          { img: Image5, name: 'Tailwind', link: 'https://tailwindcss.com/', alt: 'logo de tailwind' },
+          { img: Image6, name: 'Symfony', link: 'https://symfony.com/', alt: 'logo de symfony' },
+          { img: Image7, name: 'MySQL', link: 'https://dev.mysql.com/', alt: 'logo de mysql' },
+          { img: Image8, name: 'Firebase', link: 'https://firebase.google.com/', alt:'logo de firebase' },
+          { img: Image9, name: 'Docker', link: 'https://docs.docker.com/', alt: 'logo de docker' }
         ].map((skill, index) => (
           <a
             key={index}
@@ -46,15 +46,15 @@ function Skill() {
                 <img
                   src={skill.img}
                   className='w-full object-cover blur-2xl dark:blur-sm'
-                  alt={skill.name}
+                  alt={skill.alt}
                 />
                 <img
                   src={skill.img}
                   className='absolute top-0 left-0 w-full object-cover'
-                  alt={skill.name}
+                  alt={skill.alt}
                 />
               </div>
-              <h4 className='mt-4 font-primary tracking-widest text-base md:text-xl lg:text-2xl dark:text-white'>{skill.name}</h4>
+              <h3 className='mt-4 tracking-widest text-md md:text-xl dark:text-blue-50'>{skill.name}</h3>
             </div>
           </a>
         ))}
