@@ -3,8 +3,8 @@ import { useState } from "react";
 // images
 import Logo from "../../public/assets/svg/logo.svg";
 import LogoDark from "../../public/assets/svg/logoDark.svg";
-import FlagEN from "../../public/assets/images/flag-england.png";
-import FlagFR from "../../public/assets/images/flag-french.png";
+import FlagEN from "../../public/assets/images/flag-england.webp";
+import FlagFR from "../../public/assets/images/flag-french.webp";
 
 // translation
 import { useTranslation } from "react-i18next";
@@ -33,12 +33,16 @@ function Header() {
       <div>
         <img
           src={Logo}
-          className="dark:hidden"
+          className="w-10 md:w-16 xl:w-20 dark:hidden"
+          width={80}
+          height={80}
           alt="logo du site ressemblant à une soucoupe volante couleur gradient bleu clair vers le bleu ciel"
         />
         <img
           src={LogoDark}
-          className="w-10 md:w-16 xl:w-18 hidden dark:block"
+          className="w-10 md:w-16 xl:w-20 hidden dark:block"
+          width={80}
+          height={80}
           alt="logo du site avec la lettre C couleur orange et la lettre H couleur noire"
         />
       </div>
@@ -126,6 +130,8 @@ function Header() {
               <img
                 src={i18n.language === "en" ? FlagEN : FlagFR}
                 className="max-w-10 rounded-full"
+                width={100}
+                height={100}
                 alt="current language flag"
               />
               <span>{i18n.language.toUpperCase()}</span>

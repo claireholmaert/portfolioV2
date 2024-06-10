@@ -45,11 +45,17 @@ function Skill() {
               <div className='relative w-1/4'>
                 <img
                   src={skill.img}
+                  width={100}
+                  height={100}
                   className='w-full object-cover blur-2xl dark:blur-sm'
+                  loading='lazy'
                   alt={skill.alt}
                 />
                 <img
                   src={skill.img}
+                  width={100}
+                  height={100}
+                  loading='eager'
                   className='absolute top-0 left-0 w-full object-cover'
                   alt={skill.alt}
                 />

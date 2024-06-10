@@ -9,7 +9,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 // images
-import Image from '../../public/assets/images/light-girl.png';
+import Image from '../../public/assets/images/light-girl.webp';
 
 // translation
 import { useTranslation } from 'react-i18next';
@@ -55,11 +55,17 @@ function Contact() {
         <div className='relative w-1/2 bg-slate-900 rounded-full dark:bg-none hidden lg:flex'>
         <img 
         src={Image} 
+        width={100}
+        height={100}
         className='w-full object-cover blur-2xl dark:blur-lg'
+        loading='lazy'
         alt="image floutée d'une femme en 3d tenant une ampoule allumé dans chaque main" />
         <img 
         src={Image} 
+        width={100}
+        height={100}
         className='absolute inset-0 w-full object-cover p-5'
+        loading='eager'
         alt="image d'une femme en 3d tenant une ampoule allumé dans chaque main" />
         </div>
         <div className='grid grid-cols-2 gap-5 z-10 w-full border-2 border-dashed p-5 md:p-10 border-blue-600 rounded-lg dark:border-amber-500'>

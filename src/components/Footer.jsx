@@ -1,5 +1,5 @@
 // images
-import Image1 from "../../public/assets/images/footer-girl.png";
+import Image1 from "../../public/assets/images/footer-girl.webp";
 import Image2 from "../../public/assets/images/react.svg";
 import Image3 from "../../public/assets/images/vite.svg";
 import Image4 from "../../public/assets/images/tailwindcss-icon.svg";
@@ -58,12 +58,18 @@ function Footer() {
           </div>
           <img
             src={Image1}
+            width={100}
+            height={100}
             className="w-[400px] object-cover blur-2xl"
+            loading="lazy"
             alt="fille en 3d qui lève un doigt de chaque mains au-dessus de sa tête et qui pointe vers les extrémités droite et gauche"
           />
           <img
             src={Image1}
+            width={100}
+            height={100}
             className="absolute w-full inset-0 object-cover"
+            loading="eager"
             alt=""
           />
         </div>
@@ -83,7 +89,9 @@ function Footer() {
           >
             <path d="M6.429 9.75 2.25 12l4.179 2.25m0-4.5 5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0 4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0-5.571 3-5.571-3" />
           </svg>
-          <p className="text-xs text-slate-600 dark:text-amber-300">{t("stack")}</p>
+          <p className="text-xs text-slate-600 dark:text-amber-300">
+            {t("stack")}
+          </p>
           <div className="flex pl-1 space-x-3">
             <img
               src={Image2}
