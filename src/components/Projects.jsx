@@ -37,7 +37,7 @@ function Projects() {
         <img className='object-cover rounded-lg' src={Image3} width={500} height={500} alt="image du projet Burger House" />
           <div className='flex flex-col items-center justify-center space-y-3'>
           <h3 className='text-xl text-blue-600 font-semibold dark:text-amber-500'>Forge Pass</h3>
-          <p className='text-center'>{t("burger_house_description")}</p>
+          <p className='text-center'>{t("forge_pass_description")}</p>
           <a className='w-1/2 px-5 py-2.5 bg-blue-600 text-blue-50 rounded-md text-center animate hover:bg-blue-500 dark:bg-amber-500 dark:hover:bg-amber-400' href="https://hashage-password.vercel.app" target='_blank'>{t('learn_more')} <span className="sr-only">- Forge Pass</span></a>
           </div>
         </div>
@@ -45,7 +45,7 @@ function Projects() {
         <img className='object-cover rounded-lg' src={Image4} width={500} height={500} alt="image du projet Burger House" />
           <div className='flex flex-col items-center justify-center space-y-3'>
           <h3 className='text-xl text-blue-600 font-semibold dark:text-amber-500'>Brunch Delice</h3>
-          <p className='text-center'>{t("burger_house_description")}</p>
+          <p className='text-center'>{t("brunch_delice_description")}</p>
           <a className='w-1/2 px-5 py-2.5 bg-blue-600 text-blue-50 rounded-md text-center animate hover:bg-blue-500 dark:bg-amber-500 dark:hover:bg-amber-400' href="https://brunch-delice.vercel.app" target='_blank'>{t('learn_more')} <span className="sr-only">- Brunch Delice</span></a>
           </div>
         </div>
