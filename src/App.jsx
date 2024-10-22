@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Presentation from "./components/Presentation";
 import Projects from "./components/Projects";
+import { Services } from "./components/Services";
 import Skill from "./components/Skill";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <div className="max-w-7xl mx-auto space-y-10 md:space-y-20 p-5 xl:p-0">
       <Header />
       <Presentation />
+      <Services />
       <Projects />
       <Skill />
       <Contact />

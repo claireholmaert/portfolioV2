@@ -1,8 +1,8 @@
 // images
-import Image1 from "../../public/assets/images/footer-girl.webp";
-import Image2 from "../../public/assets/images/react.svg";
-import Image3 from "../../public/assets/images/vite.svg";
-import Image4 from "../../public/assets/images/tailwindcss-icon.svg";
+import Image1 from "/images/footer-girl.webp";
+import Image2 from "/svg/react.svg";
+import Image3 from "/svg/vite.svg";
+import Image4 from "/svg/tailwindcss-icon.svg";
 
 // translation
 import { useTranslation } from "react-i18next";
@@ -28,7 +28,7 @@ function Footer() {
             <a
               href="https://github.com/claireholmaert"
               aria-label="lien qui mène vers le site GitHub"
-              className="absolute top-20 left-0 lg:top-16 lg:-left-5 p-3 lg:p-5 bg-blue-600 text-blue-50 rounded-full animate hover:scale-110 hover:bg-blue-500 z-10 dark:bg-amber-500 dark:hover:bg-amber-400 dark:text-amber-50"
+              className="absolute top-20 left-0 lg:top-16 lg:-left-5 p-3 lg:p-5 bg-blue-600 text-blue-50 rounded-full transition-colors hover:scale-110 hover:bg-blue-500 z-10 dark:bg-amber-500 dark:hover:bg-amber-400 dark:text-amber-50"
               target="_blank"
             >
               <svg
@@ -43,7 +43,7 @@ function Footer() {
             <a
               href="https://www.linkedin.com/in/claire-holmaert-%F0%9F%8D%80-b103a1262/"
               aria-label="lien qui mène vers le site LinkedIn"
-              className="absolute top-20 right-0 lg:top-16 lg:-right-10 p-3 lg:p-5 bg-blue-600 text-blue-50 rounded-full animate hover:scale-110 hover:bg-blue-500 z-10 dark:bg-amber-500 dark:hover:bg-amber-400 dark:text-amber-50"
+              className="absolute top-20 right-0 lg:top-16 lg:-right-10 p-3 lg:p-5 bg-blue-600 text-blue-50 rounded-full transition-colors hover:scale-110 hover:bg-blue-500 z-10 dark:bg-amber-500 dark:hover:bg-amber-400 dark:text-amber-50"
               target="_blank"
             >
               <svg

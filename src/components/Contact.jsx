@@ -9,7 +9,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 // images
-import Image from '../../public/assets/images/light-girl.webp';
+import Image from '/images/light-girl.webp';
 
 // translation
 import { useTranslation } from 'react-i18next';
@@ -98,7 +98,7 @@ function Contact() {
         <div className='flex justify-end col-span-2'>
         <input 
         onClick={notify}
-        className='animate bg-blue-600 text-blue-50 hover:bg-blue-500 px-4 py-2 md:px-5 md:py-3 rounded-lg text-xl font-primary tracking-widest dark:bg-amber-500 dark:hover:bg-amber-400 dark:text-amber-50' 
+        className='transition-colors cursor-pointer bg-blue-600 text-blue-50 hover:bg-blue-500 px-4 py-2 md:px-5 md:py-3 rounded-lg text-xl font-primary tracking-widest dark:bg-amber-500 dark:hover:bg-amber-400 dark:text-amber-50' 
         type="submit" 
         value={t('send_button')} 
         />

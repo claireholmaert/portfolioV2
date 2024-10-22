@@ -1,13 +1,13 @@
 // images
-import Image1 from '../../public/assets/images/javascript.svg';
-import Image2 from '../../public/assets/images/react.svg';
-import Image3 from '../../public/assets/images/nextjs-icon.svg';
-import Image4 from '../../public/assets/images/symfony.svg';
-import Image5 from '../../public/assets/images/sass.svg';
-import Image6 from '../../public/assets/images/tailwindcss-icon.svg';
-import Image7 from '../../public/assets/images/mysql.svg';
-import Image8 from '../../public/assets/images/firebase.svg';
-import Image9 from '../../public/assets/images/docker-icon.svg';
+import Image1 from '/svg/javascript.svg';
+import Image2 from '/svg/react.svg';
+import Image3 from '/svg/nextjs-icon.svg';
+import Image4 from '/svg/symfony.svg';
+import Image5 from '/svg/sass.svg';
+import Image6 from '/svg/tailwindcss-icon.svg';
+import Image7 from '/svg/postgresql.svg';
+import Image8 from '/svg/firebase.svg';
+import Image9 from '/svg/docker-icon.svg';
 
 // translation
 import { useTranslation } from 'react-i18next';
@@ -27,10 +27,10 @@ function Skill() {
         {[{ img: Image1, name: 'Javascript', link: 'https://devdocs.io/javascript/', alt: 'logo de javascript' },
           { img: Image2, name: 'React', link: 'https://fr.react.dev/', alt: 'logo de react' },
           { img: Image3, name: 'NextJs', link: 'https://nextjs.org/', alt: 'logo de next.js' },
-          { img: Image4, name: 'Sass', link: 'https://sass-lang.com/', alt: 'logo de saas' },
-          { img: Image5, name: 'Tailwind', link: 'https://tailwindcss.com/', alt: 'logo de tailwind' },
-          { img: Image6, name: 'Symfony', link: 'https://symfony.com/', alt: 'logo de symfony' },
-          { img: Image7, name: 'MySQL', link: 'https://dev.mysql.com/', alt: 'logo de mysql' },
+          { img: Image4, name: 'Symfony', link: 'https://symfony.com/', alt: 'logo de symfony' },
+          { img: Image5, name: 'Sass', link: 'https://sass-lang.com/', alt: 'logo de saas' },
+          { img: Image6, name: 'Tailwind', link: 'https://tailwindcss.com/', alt: 'logo de tailwind' },
+          { img: Image7, name: 'PostgreSQL', link: 'https://www.postgresql.org/', alt: 'logo de mysql' },
           { img: Image8, name: 'Firebase', link: 'https://firebase.google.com/', alt:'logo de firebase' },
           { img: Image9, name: 'Docker', link: 'https://docs.docker.com/', alt: 'logo de docker' }
         ].map((skill, index) => (

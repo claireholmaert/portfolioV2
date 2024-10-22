@@ -1,13 +1,16 @@
 import { useState } from "react";
 
 // images
-import Logo from "../../public/assets/svg/logo.svg";
-import LogoDark from "../../public/assets/svg/logoDark.svg";
-import FlagEN from "../../public/assets/images/flag-england.webp";
-import FlagFR from "../../public/assets/images/flag-french.webp";
+import Logo from "/svg/logo.svg";
+import LogoDark from "/svg/logoDark.svg";
+import FlagEN from "/images/flag-england.webp";
+import FlagFR from "/images/flag-french.webp";
 
 // translation
 import { useTranslation } from "react-i18next";
+import { PiProjectorScreenChartFill } from "react-icons/pi";
+import { BiSolidMessageAltDetail } from "react-icons/bi";
+import { IoAlbums } from "react-icons/io5";
 
 function Header() {
   const [darkMode, setDarkMode] = useState(false);
@@ -52,17 +55,10 @@ function Header() {
             <a
               href="#projects"
               aria-label="lien qui mène vers l'encre des projets de ce site"
-              className="animate text-blue-600 hover:text-blue-500 dark:text-amber-500 dark:hover:text-amber-400 lg:flex"
+              className="transition-colors text-blue-600 hover:text-blue-500 dark:text-amber-500 dark:hover:text-amber-400 lg:flex"
             >
               <span className="mr-1 flex">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  className="w-8 h-8 lg:w-6 lg:h-6"
-                >
-                  <path d="M5.566 4.657A4.505 4.505 0 0 1 6.75 4.5h10.5c.41 0 .806.055 1.183.157A3 3 0 0 0 15.75 3h-7.5a3 3 0 0 0-2.684 1.657ZM2.25 12a3 3 0 0 1 3-3h13.5a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3v-6ZM5.25 7.5c-.41 0-.806.055-1.184.157A3 3 0 0 1 6.75 6h10.5a3 3 0 0 1 2.683 1.657A4.505 4.505 0 0 0 18.75 7.5H5.25Z" />
-                </svg>
+              <PiProjectorScreenChartFill className="w-8 h-8 lg:w-6 lg:h-6" />
               </span>
               <span className="hidden lg:flex">{t("projects")}</span>
             </a>
@@ -71,19 +67,10 @@ function Header() {
             <a
               href="#skills"
               aria-label="lien qui mène vers l'encre des compétences de ce site"
-              className="animate text-blue-600 hover:text-blue-500 dark:text-amber-500 dark:hover:text-amber-400 lg:flex"
+              className="transition-colors text-blue-600 hover:text-blue-500 dark:text-amber-500 dark:hover:text-amber-400 lg:flex"
             >
               <span className="mr-1 flex">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  className="w-8 h-8 lg:w-6 lg:h-6"
-                >
-                  <path d="M11.644 1.59a.75.75 0 0 1 .712 0l9.75 5.25a.75.75 0 0 1 0 1.32l-9.75 5.25a.75.75 0 0 1-.712 0l-9.75-5.25a.75.75 0 0 1 0-1.32l9.75-5.25Z" />
-                  <path d="m3.265 10.602 7.668 4.129a2.25 2.25 0 0 0 2.134 0l7.668-4.13 1.37.739a.75.75 0 0 1 0 1.32l-9.75 5.25a.75.75 0 0 1-.71 0l-9.75-5.25a.75.75 0 0 1 0-1.32l1.37-.738Z" />
-                  <path d="m10.933 19.231-7.668-4.13-1.37.739a.75.75 0 0 0 0 1.32l9.75 5.25c.221.12.489.12.71 0l9.75-5.25a.75.75 0 0 0 0-1.32l-1.37-.738-7.668 4.13a2.25 2.25 0 0 1-2.134-.001Z" />
-                </svg>
+              <IoAlbums className="w-8 h-8 lg:w-6 lg:h-6" />
               </span>
               <span className="hidden lg:flex">{t("skills")}</span>
             </a>
@@ -92,18 +79,10 @@ function Header() {
             <a
               href="#contact"
               aria-label="lien qui mène vers l'encre me contacter de ce site"
-              className="animate text-blue-600 hover:text-blue-500 dark:text-amber-500 dark:hover:text-amber-400 lg:flex"
+              className="transition-colors text-blue-600 hover:text-blue-500 dark:text-amber-500 dark:hover:text-amber-400 lg:flex"
             >
               <span className="mr-1 flex">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  className="w-8 h-8 lg:w-6 lg:h-6"
-                >
-                  <path d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z" />
-                  <path d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z" />
-                </svg>
+              <BiSolidMessageAltDetail className="w-8 h-8 lg:w-6 lg:h-6" />
               </span>
               <span className="hidden lg:flex">{t("contact")}</span>
             </a>
@@ -143,7 +122,7 @@ function Header() {
                     changeLanguage("en");
                     setIsDropdownOpen(false);
                   }}
-                  className="animate flex items-center w-full p-2 rounded-lg hover:bg-blue-100 dark:hover:bg-amber-100"
+                  className="transition-colors flex items-center w-full p-2 rounded-lg hover:bg-blue-100 dark:hover:bg-amber-100"
                 >
                   <img
                     src={FlagEN}
@@ -157,7 +136,7 @@ function Header() {
                     changeLanguage("fr");
                     setIsDropdownOpen(false);
                   }}
-                  className="animate flex items-center w-full p-2 rounded-lg hover:bg-blue-100 dark:hover:bg-amber-100"
+                  className="transition-colors flex items-center w-full p-2 rounded-lg hover:bg-blue-100 dark:hover:bg-amber-100"
                 >
                   <img
                     src={FlagFR}

@@ -1,5 +1,5 @@
 // images
-import Image from "../../public/assets/images/girl3d.webp";
+import Image from "/images/girl3d.webp";
 
 // translation
 import { useTranslation } from "react-i18next";

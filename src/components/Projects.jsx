@@ -1,8 +1,8 @@
 // images
-import Image1 from '../../public/assets/images/burgerHouse.avif';
-import Image2 from '../../public/assets/images/budgetApp.avif';
-import Image3 from '../../public/assets/images/hash.avif';
-import Image4 from '../../public/assets/images/brunch-delice.avif';
+import Image1 from '/images/burgerHouse.avif';
+import Image2 from '/images/budgetApp.avif';
+import Image3 from '/images/hash.avif';
+import Image4 from '/images/brunch-delice.avif';
 
 // translation
 import { useTranslation } from 'react-i18next';
@@ -30,7 +30,7 @@ function Projects() {
           <div className='flex flex-col items-center justify-center space-y-3'>
           <h3 className='text-xl text-blue-600 font-semibold dark:text-amber-500'>Budget App</h3>
           <p className='text-center'>{t("budget_app_description")}</p>
-          <a className='w-1/2 px-5 py-2.5 bg-blue-600 text-blue-50 rounded-md text-center animate hover:bg-blue-500 dark:bg-amber-500 dark:hover:bg-amber-400' href="https://budget-app-beige.vercel.app" target='_blank'>{t('learn_more')} <span className="sr-only">- Budget App</span></a>
+          <a className='w-1/2 px-5 py-2.5 bg-blue-600 text-blue-50 rounded-md text-center transition-colors hover:bg-blue-500 dark:bg-amber-500 dark:hover:bg-amber-400' href="https://budget-app-beige.vercel.app" target='_blank'>{t('learn_more')} <span className="sr-only">- Budget App</span></a>
           </div>
         </div>
         <div className='w-full flex flex-col items-center justify-center space-y-3 shadow-md p-5 rounded-xl dark:shadow-amber-500'>
@@ -38,7 +38,7 @@ function Projects() {
           <div className='flex flex-col items-center justify-center space-y-3'>
           <h3 className='text-xl text-blue-600 font-semibold dark:text-amber-500'>Forge Pass</h3>
           <p className='text-center'>{t("forge_pass_description")}</p>
-          <a className='w-1/2 px-5 py-2.5 bg-blue-600 text-blue-50 rounded-md text-center animate hover:bg-blue-500 dark:bg-amber-500 dark:hover:bg-amber-400' href="https://hashage-password.vercel.app" target='_blank'>{t('learn_more')} <span className="sr-only">- Forge Pass</span></a>
+          <a className='w-1/2 px-5 py-2.5 bg-blue-600 text-blue-50 rounded-md text-center transition-colors hover:bg-blue-500 dark:bg-amber-500 dark:hover:bg-amber-400' href="https://hashage-password.vercel.app" target='_blank'>{t('learn_more')} <span className="sr-only">- Forge Pass</span></a>
           </div>
         </div>
         <div className='w-full flex flex-col items-center justify-center space-y-3 shadow-md p-5 rounded-xl dark:shadow-amber-500'>
@@ -46,7 +46,7 @@ function Projects() {
           <div className='flex flex-col items-center justify-center space-y-3'>
           <h3 className='text-xl text-blue-600 font-semibold dark:text-amber-500'>Brunch Delice</h3>
           <p className='text-center'>{t("brunch_delice_description")}</p>
-          <a className='w-1/2 px-5 py-2.5 bg-blue-600 text-blue-50 rounded-md text-center animate hover:bg-blue-500 dark:bg-amber-500 dark:hover:bg-amber-400' href="https://brunch-delice.vercel.app" target='_blank'>{t('learn_more')} <span className="sr-only">- Brunch Delice</span></a>
+          <a className='w-1/2 px-5 py-2.5 bg-blue-600 text-blue-50 rounded-md text-center transition-colors hover:bg-blue-500 dark:bg-amber-500 dark:hover:bg-amber-400' href="https://brunch-delice.vercel.app" target='_blank'>{t('learn_more')} <span className="sr-only">- Brunch Delice</span></a>
           </div>
         </div>
       </div>
