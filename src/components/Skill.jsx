@@ -1,12 +1,12 @@
 // images
-import Image1 from '/svg/javascript.svg';
+import Image1 from '/svg/typescript-icon.svg';
 import Image2 from '/svg/react.svg';
 import Image3 from '/svg/nextjs-icon.svg';
 import Image4 from '/svg/symfony.svg';
 import Image5 from '/svg/sass.svg';
 import Image6 from '/svg/tailwindcss-icon.svg';
 import Image7 from '/svg/postgresql.svg';
-import Image8 from '/svg/firebase.svg';
+import Image8 from '/svg/appwrite-icon.svg';
 import Image9 from '/svg/docker-icon.svg';
 
 // translation
@@ -31,7 +31,7 @@ function Skill() {
           { img: Image5, name: 'Sass', link: 'https://sass-lang.com/', alt: 'logo de saas' },
           { img: Image6, name: 'Tailwind', link: 'https://tailwindcss.com/', alt: 'logo de tailwind' },
           { img: Image7, name: 'PostgreSQL', link: 'https://www.postgresql.org/', alt: 'logo de mysql' },
-          { img: Image8, name: 'Firebase', link: 'https://firebase.google.com/', alt:'logo de firebase' },
+          { img: Image8, name: 'Appwrite', link: 'https://firebase.google.com/', alt:'logo de firebase' },
           { img: Image9, name: 'Docker', link: 'https://docs.docker.com/', alt: 'logo de docker' }
         ].map((skill, index) => (
           <a
